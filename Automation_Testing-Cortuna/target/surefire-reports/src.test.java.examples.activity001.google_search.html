@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!DOCTYPE HTML><html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    <link href="favicon.ico" rel="shortcut icon">
+    <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    <title>src.test.java.examples.activity001.google_search</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        <div class="nav-logo">
+          <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          <div class="nav-count">
+            <div class="bg-success" id="nav-pass">0</div>
+            <div class="bg-danger" id="nav-fail">2</div>
+          </div>
+        </div>
+        <div id="nav-type">Scenarios</div>         
+        <div id="nav-date">2022-08-02 07:02:48 PM</div>        
+      <div class="nav-container"><div class="nav-item failed"><a href="#[1.1:20]">[1.1:20] Visit PUP homepage -&lt;PUP Homepage&gt; </a></div><div class="nav-item failed"><a href="#[1.2:20]">[1.2:20] Visit PUP homepage -&lt;PUP Homepage&gt; </a></div></div></div>
+      <div id="content">
+      <div class="page-heading alert alert-primary"><a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/examples/activity001/google_search.feature</span><span class="feature-description">Search in Google</span></div><div class="scenario"><div class="scenario-heading" id="[1.1:20]"><div class="heading-container"><div class="scenario-tags"><a class="badge badge-primary" href="karate-tags.html">smoke</a></div><span class="scenario-keyword">Scenario Outline: [1.1:20]</span><span class="scenario-name">Visit PUP homepage -&lt;PUP Homepage&gt; </span></div><div class="scenario-time failed">ms: 20904</div></div><div class="step-row"><div class="step-container" id="1"><div class="step-ref passed">1</div><div class="step-cell passed">Given def step0 = 'Using Chrome as a browser'</div></div><div class="time-cell passed">27</div></div><div class="step-row"><div class="step-container" id="2"><div class="step-ref passed">2</div><div class="step-cell passed">* configure driver = {type:'chromedriver', executable: 'C:/Program Files (x86)/Google/chromedriver.exe'}</div></div><div class="time-cell passed">1</div></div><div class="step-row"><div class="step-container" id="3"><div class="step-ref passed">3</div><div class="step-cell passed">And def step1 = 'Browser navigates to Google'</div></div><div class="time-cell passed">7</div></div><div class="step-row"><div class="step-container" id="4"><div class="step-ref passed">4</div><div class="step-cell passed">* driver 'https://www.google.com/'</div></div><div class="time-cell passed">7261</div></div><div class="preformatted" data-parent="4">19:02:05.926 preferred port 9515 not available, will use: 51134</div><div class="step-row"><div class="step-container" id="5"><div class="step-ref passed">5</div><div class="step-cell passed">And def step2 = 'User input text search'</div></div><div class="time-cell passed">7</div></div><div class="step-row"><div class="step-container" id="6"><div class="step-ref passed">6</div><div class="step-cell passed">* input('input[name=q]', '&lt;pup app&gt;')</div></div><div class="time-cell passed">604</div></div><div class="step-row"><div class="step-container" id="7"><div class="step-ref passed">7</div><div class="step-cell passed">When def step3 = 'User click button'</div></div><div class="time-cell passed">6</div></div><div class="step-row"><div class="step-container" id="8"><div class="step-ref passed">8</div><div class="step-cell passed">* click('input[name=btnI]')</div></div><div class="time-cell passed">3837</div></div><div class="step-row"><div class="step-container" id="9"><div class="step-ref passed">9</div><div class="step-cell passed">Then def step4 = 'User expected result should display the website'</div></div><div class="time-cell passed">6</div></div><div class="step-row"><div class="step-container" id="10"><div class="step-ref failed">10</div><div class="step-cell failed">* waitForUrl('https://sis1.pup.edu.ph/')</div></div><div class="time-cell failed">9149</div></div><div class="preformatted" data-parent="10">19:02:17.691 waitForUrl - retry #1
+19:02:20.707 waitForUrl - retry #2
+19:02:23.720 waitForUrl - retry #3
+19:02:26.760 waitForUrl: failed after 3 retries and 9088 milliseconds
+google_search.feature:31 - evaluation (js) failed: waitForUrl('https://sis1.pup.edu.ph/'), waitForUrl: failed after 3 retries and 9088 milliseconds</div></div><div class="scenario"><div class="scenario-heading" id="[1.2:20]"><div class="heading-container"><div class="scenario-tags"><a class="badge badge-primary" href="karate-tags.html">smoke</a></div><span class="scenario-keyword">Scenario Outline: [1.2:20]</span><span class="scenario-name">Visit PUP homepage -&lt;PUP Homepage&gt; </span></div><div class="scenario-time failed">ms: 19828</div></div><div class="step-row"><div class="step-container" id="11"><div class="step-ref passed">11</div><div class="step-cell passed">Given def step0 = 'Using Chrome as a browser'</div></div><div class="time-cell passed">21</div></div><div class="step-row"><div class="step-container" id="12"><div class="step-ref passed">12</div><div class="step-cell passed">* configure driver = {type:'chromedriver', executable: 'C:/Program Files (x86)/Google/chromedriver.exe'}</div></div><div class="time-cell passed">0</div></div><div class="step-row"><div class="step-container" id="13"><div class="step-ref passed">13</div><div class="step-cell passed">And def step1 = 'Browser navigates to Google'</div></div><div class="time-cell passed">7</div></div><div class="step-row"><div class="step-container" id="14"><div class="step-ref passed">14</div><div class="step-cell passed">* driver 'https://www.google.com/'</div></div><div class="time-cell passed">7103</div></div><div class="preformatted" data-parent="14">19:02:27.405 preferred port 9515 not available, will use: 51197</div><div class="step-row"><div class="step-container" id="15"><div class="step-ref passed">15</div><div class="step-cell passed">And def step2 = 'User input text search'</div></div><div class="time-cell passed">4</div></div><div class="step-row"><div class="step-container" id="16"><div class="step-ref passed">16</div><div class="step-cell passed">* input('input[name=q]', '&lt;pup app&gt;')</div></div><div class="time-cell passed">246</div></div><div class="step-row"><div class="step-container" id="17"><div class="step-ref passed">17</div><div class="step-cell passed">When def step3 = 'User click button'</div></div><div class="time-cell passed">7</div></div><div class="step-row"><div class="step-container" id="18"><div class="step-ref passed">18</div><div class="step-cell passed">* click('input[name=btnI]')</div></div><div class="time-cell passed">3312</div></div><div class="step-row"><div class="step-container" id="19"><div class="step-ref passed">19</div><div class="step-cell passed">Then def step4 = 'User expected result should display the website'</div></div><div class="time-cell passed">7</div></div><div class="step-row"><div class="step-container" id="20"><div class="step-ref failed">20</div><div class="step-cell failed">* waitForUrl('https://sis1.pup.edu.ph/')</div></div><div class="time-cell failed">9120</div></div><div class="preformatted" data-parent="20">19:02:38.151 waitForUrl - retry #1
+19:02:41.166 waitForUrl - retry #2
+19:02:44.181 waitForUrl - retry #3
+19:02:47.193 waitForUrl: failed after 3 retries and 9056 milliseconds
+google_search.feature:31 - evaluation (js) failed: waitForUrl('https://sis1.pup.edu.ph/'), waitForUrl: failed after 3 retries and 9056 milliseconds</div></div></div>
+    </div>   
+  </body>
+</html>

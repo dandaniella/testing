@@ -1,0 +1,57 @@
+<testsuite failures="2"
+           name="src/test/java/examples/activity001/google_search.feature"
+           skipped="0"
+           tests="2"
+           time="40.732245">
+   <testcase classname="src.test.java.examples.activity001.google_search"
+             name="Visit PUP homepage -&lt;PUP Homepage&gt;"
+             time="20.904225">
+      <failure message="google_search.feature:31 - evaluation (js) failed: waitForUrl('https://sis1.pup.edu.ph/'), waitForUrl: failed after 3 retries and 9088 milliseconds">Given def step0 = 'Using Chrome as a browser' ............................. passed
+* configure driver = {type:'chromedriver', executable: 'C:/Program Files (x86)/Google/chromedriver.exe'} . passed
+And def step1 = 'Browser navigates to Google' ............................. passed
+* driver 'https://www.google.com/' ........................................ passed
+And def step2 = 'User input text search' .................................. passed
+* input('input[name=q]', '&lt;pup app&gt;') ..................................... passed
+When def step3 = 'User click button' ...................................... passed
+* click('input[name=btnI]') ............................................... passed
+Then def step4 = 'User expected result should display the website' ........ passed
+* waitForUrl('https://sis1.pup.edu.ph/') .................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: google_search.feature:31 - evaluation (js) failed: waitForUrl('https://sis1.pup.edu.ph/'), waitForUrl: failed after 3 retries and 9088 milliseconds&#xD;
+	at ✽.* waitForUrl('https://sis1.pup.edu.ph/') (google_search.feature:31)</failure>
+   </testcase>
+   <testcase classname="src.test.java.examples.activity001.google_search"
+             name="Visit PUP homepage -&lt;PUP Homepage&gt;"
+             time="19.82802">
+      <failure message="google_search.feature:31 - evaluation (js) failed: waitForUrl('https://sis1.pup.edu.ph/'), waitForUrl: failed after 3 retries and 9056 milliseconds">Given def step0 = 'Using Chrome as a browser' ............................. passed
+* configure driver = {type:'chromedriver', executable: 'C:/Program Files (x86)/Google/chromedriver.exe'} . passed
+And def step1 = 'Browser navigates to Google' ............................. passed
+* driver 'https://www.google.com/' ........................................ passed
+And def step2 = 'User input text search' .................................. passed
+* input('input[name=q]', '&lt;pup app&gt;') ..................................... passed
+When def step3 = 'User click button' ...................................... passed
+* click('input[name=btnI]') ............................................... passed
+Then def step4 = 'User expected result should display the website' ........ passed
+* waitForUrl('https://sis1.pup.edu.ph/') .................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: google_search.feature:31 - evaluation (js) failed: waitForUrl('https://sis1.pup.edu.ph/'), waitForUrl: failed after 3 retries and 9088 milliseconds&#xD;
+	at ✽.* waitForUrl('https://sis1.pup.edu.ph/') (google_search.feature:31)&#xD;
+
+Given def step0 = 'Using Chrome as a browser' ............................. passed
+* configure driver = {type:'chromedriver', executable: 'C:/Program Files (x86)/Google/chromedriver.exe'} . passed
+And def step1 = 'Browser navigates to Google' ............................. passed
+* driver 'https://www.google.com/' ........................................ passed
+And def step2 = 'User input text search' .................................. passed
+* input('input[name=q]', '&lt;pup app&gt;') ..................................... passed
+When def step3 = 'User click button' ...................................... passed
+* click('input[name=btnI]') ............................................... passed
+Then def step4 = 'User expected result should display the website' ........ passed
+* waitForUrl('https://sis1.pup.edu.ph/') .................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: google_search.feature:31 - evaluation (js) failed: waitForUrl('https://sis1.pup.edu.ph/'), waitForUrl: failed after 3 retries and 9056 milliseconds&#xD;
+	at ✽.* waitForUrl('https://sis1.pup.edu.ph/') (google_search.feature:31)</failure>
+   </testcase>
+</testsuite>
